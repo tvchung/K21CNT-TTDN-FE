@@ -1,0 +1,14 @@
+
+.container{
+    margin: 1rem 10%;
+}
+
+nav#navBar  ul{
+    display: flex;
+    list-style: none;
+}
+
+nav#navBar  ul li a{
+    display: block;
+    padding: 1rem;
+}
