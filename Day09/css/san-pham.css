@@ -1,0 +1,140 @@
+/* mà hình nhỏ nhất  */
+body{
+    background-color: #ccc;
+    font-size: "Gotham-Medium";
+}
+#product{
+    background-color: #ccc;
+}
+.container{
+    margin: 1rem;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col{
+    width: 100%;
+}
+#product h2 {
+    font-family: "Gotham-Ultra";
+    font-size: 1.5rem;
+    position: relative;
+}
+#product h2::after{
+    content: "";
+    width: 60%;
+    height: 4px;
+    background-color: rgb(164, 20, 20);
+    position: absolute;
+    left: 0;
+    top: 100%;
+}
+.product-box{
+    background-color: #fff;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+
+#product a {
+    font-family: "Gotham-Medium";
+    /* font-size: .8rem; */
+    text-decoration: none;
+}
+#product .head {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem .5rem;
+}
+#product .item {
+    /* border: 1px solid #ccc; */
+    /* border-radius: .5rem; */
+    margin: .5rem 0;
+    padding: .5rem;
+}
+
+#product .item .img > img{
+    width: 100%;
+    /* border-radius: .5rem; */
+}
+#product .content {
+    text-align: center;
+    font-family: "Gotham-Thin";
+    font-size: 1rem;
+}
+#product h3 {
+    margin-top: .5rem;
+    padding: .5rem 0;
+}
+#product h3 a {
+    font-family: "Gotham-Ultra";
+    font-size: 1.2rem;
+  
+}
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) { 
+  
+    .container{
+        margin: 1.5rem;
+    }
+    .col{
+        width: 50%;
+    }
+    #product .item {
+        margin: .5rem;
+        padding: .5rem;
+    }
+    #product .head {
+        padding: 1rem;
+    }
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+   
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+
+   
+    .col{
+        width: 33.333334%;
+    }
+ }
+
+/* // X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) { 
+  
+    .container{
+        margin: 1rem auto;
+        width: 1140px;
+    }
+    .col{
+        width: 25%;
+    }
+ }
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) { 
+  
+    .container{
+        margin: 1rem auto;
+        width: 1320px;
+    }
+   
+ }
+ @media (min-width: 1600px) { 
+  
+    .container{
+        margin: 1rem auto;
+        width: 1520px;
+    }
+    .col{
+        width: 20%;
+    }
+   
+ }

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Csss</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #zone1{
+            background-color: #ccc;
+            margin: 2rem;
+            height: 100vh;
+            width: 100vw;
+        }
+        .div{
+            border: 1px solid red;
+            margin: 1rem 2rem .5rem 0rem;
+            padding-top: 2rem;
+            padding-bottom: 1rem;
+            padding-left: .5rem;
+
+            position: relative;
+        }
+        .divA {
+            width: 500px;
+            height: 100px;
+        }
+        
+        .div span.giam-gia{
+            position: absolute;
+            background-color: red;
+            /* width: 50px;
+            height: 50px;
+            text-align: center; */
+            /* vertical-align: middle; */
+            /* right: 0;
+            top: 0; */
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            border-radius: 50%;
+            padding: 1rem;
+            opacity: .5;
+        }
+    </style>
+</head>
+<body>
+    <section id="zone1">
+        <div class="div divA">
+            A
+            <span class="giam-gia">50%</span>
+
+        </div>
+        <div class="div">B</div>
+        <div class="div">C</div>
+        <div class="div">D
+            <span class="giam-gia">70%</span>
+        </div>
+    </section>
+</body>
+</html>
