@@ -1,0 +1,150 @@
+##Overview Javascript
+#1. Syntax:
+    ++ console
+    ++ nhúng vào trang html 
+        +++ thẻ script
+        +++ thẻ script -> file .js 
+#2. Các khái niêm cơ bản
+    - Biến, hằng:
+        var: khai báo biến toàn cục: cho phép khai báo lại, gán lại giá trị
+        let: khai báo biến cục bộ (toàn cục): không cho phéo khai báo lại, gán lại
+        const: khai báo hằng số.
+    - Toán tử, toán hạng, biểu thức:
+        + Toán tử: 
+            **; / ; +; -; %; ++; --
+            >; >=; <; <=; ==; ===; !=; !==
+            10, 30, -> toán hạng
+            Biểu thức: kết hợp toán tử, toán hạng, biến, hằng,..
+                Ví dụ: x+2*y-z+10;
+
+    - Câu lệnh, khối lệnh
+        + câu lệnh gán:
+            var bien = 10;
+            let x=2*y+13;
+        + Khối lệnh:
+            {
+                let x=10;
+                var y=20;
+                z=x+y;
+            }
+    - Từ khóa của ngôn ngữ,...
+        var, let, const, if, for, while, do,....
+        Array, Object,...
+#3. I/O: input / output
+    + console: -> output trên console 
+    + hàm hệ thống (html):
+        prompt: nhập
+        alert: hiện thị 
+        confirm: hộp thoại hỏi đáp 
+#4. Các cấu trúc điều khiển: (3 loại cấu trúc điều khiển)
+#4.1: Lựa chọn / rẽ nhánh
+    a) if (4 dạng if khác nhau)
+        + if đơn 
+        + if đầy đủ
+        + if bậc thang
+        + if lồng nhau
+
+    b) switch ... case 
+        switch(variable / expression){
+            case value-1:
+                statement 1;
+                break;
+            case value-2:
+                statement 2;
+                break;
+            .....
+            default:
+                statement n+1;
+            
+        }
+#4.2: Loop (cấu trúc lặp) - lặp trong điều kiện đúng
+    a) for  (4 dạng for)
+        - syntax:
+            for(init ; expression-condition; step){
+                statement block;
+            }
+
+        init;
+        for( ; expression-condition; step){
+                statement block;
+            }
+        
+        for( init; ; step){
+                statement block;
+            }
+        for( init; expression-condition ; ){
+                statement block;
+            }
+
+        for( ;  ; ){
+                statement block;
+            }
+        
+        for( init, statement; expression-condition ; step, statement){}
+    b) while 
+        -  syntax:
+        while(expression condition){
+            statement block;
+        }
+    c) do...while 
+        - syntax:
+        do{
+            statement block;
+        }while(expression condition);
+
+    d) foreach -> lặp trong tập hợp
+        for(let x in collection){
+            statement block
+        }
+
+#4.3: Lệnh  nhảy
+    + break ;
+    + continue;
+    + return;
+#5. Mảng
+    - Mảng 1 chiều ; mảng nhiều chiểu
+    - Array ; []
+
+    ví dụ:
+    var num = [12,34,22,11];
+    ==> num[0]=12; ... num[3]=11;
+    number= new Array(11,22,33,55,66,77);
+    => number[0]= 11; ...; number[2]=33;
+#6. Hàm (Function)
+    - Normal function 
+    - Arrow Function 
+
+    ví dụ:
+    function show(){
+        console.log("Xin chao ham");
+        alert("Hello function");
+    }
+    function add(x,y){
+        return x+y;
+    }
+
+    const fn_add=(x,y)=>{
+        return x+y;
+    }
+
+    var fn_display = ()=>{
+        console.log("Xin chào");
+    }
+
+    Gọi hàm: 
+    show();
+    var gtri = add(10,11);
+    gtri = fn_add(11,22);
+    fn_display();
+#7. Object: String; Date; ...
+- String: 
+    ++ Thuộc tính
+    ++ Phương thức (hàm):
+
+    ví dụ:
+    var str="Devmmaster"
+    str = new String("Devmaster");
+    - thuộc tính:
+        str.length -> trả về số ký tự của xâu
+    - Phương thức:
+        let gt = str.left(2); => De 
